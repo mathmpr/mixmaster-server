@@ -18,7 +18,7 @@ printf "Desativando firewall.\\nDisabling firewall.\\n\\n"
 sudo systemctl stop ufw > /dev/null 2>&1 && sudo ufw disable > /dev/null 2>&1 && sudo systemctl disable ufw > /dev/null 2>&1
 printf "Instalando dependências do python.\\nInstalling python dependencies.\\n\\n"
 sudo -H pip3 install pexpect > /dev/null 2>&1 && sudo -H pip3 install psutil > /dev/null 2>&1
-printf "Fazendo download do repositório. Isso pode demorar vários minutos, visto que o client do jogo já está presente no repositório\\nDownloading repository. This may take several minutes, since the game client is already present in the repository\\n\\n";
+printf "Fazendo download do repositório.\\nDownloading repository.\\n\\n";
 curl -C - -L --retry 3 --retry-delay 5 -o repository.zip "https://codeload.github.com/mathmpr/mixmaster-server/zip/refs/heads/master"
 printf "\\nExtraindo repositório.\\nExtracting repository.\\n\\n";
 unzip -o ./repository.zip -d ./ > /dev/null
