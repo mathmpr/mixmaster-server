@@ -23,10 +23,10 @@ curl -C - -L --retry 3 --retry-delay 5 -o repository.zip "https://codeload.githu
 printf "\\nExtraindo repositório.\\nExtracting repository.\\n\\n";
 unzip -o ./repository.zip -d ./ > /dev/null
 sudo rm ./repository.zip
-sudo chmod -R 777 ./mixmaster-utils-master
-sudo cp -rp ./mixmaster-utils-master/server ./server
-sudo cp -p ./mixmaster-utils-master/manage.sh ./
-sudo rm -rf ./mixmaster-utils-master
+sudo chmod -R 777 ./mixmaster-server-master
+sudo cp -rp ./mixmaster-server-master/server ./server
+sudo cp -p ./mixmaster-server-master/manage.sh ./
+sudo rm -rf ./mixmaster-server-master
 sudo chmod +x ./ > /dev/null 2>&1
 printf "\\nA partir de agora a execução será finalizada pelo script init.py.\\nFrom now the execution will be finished by the init.py script.\\n\\n"
 cd "$HOME" && sudo ./manage.sh -cc
