@@ -16,3 +16,16 @@ Open your virtual machine, press Ctrl+Alt+T to open terminal and run the followi
 That is all. If you want to understand what is happening, you can open ./configure.sh and ./manage.sh files and read the content. Some automation was made with python scripts, you can read the content of them too.
 
 Enjoy :)
+
+## Optional
+You can configure SSH using the VM ip, user and password of SO that you choose during SO installation. To discover the VM IP you can run at a terminal:
+```bash
+ifconfig
+```
+For that I recommend [Bitvise](https://www.bitvise.com/ssh-client-download) or similar.
+
+You can also configure a remote MySQL connection from host machine or LAN machine. During server install you configure a user and password for MySQL. You can use that credentials with the IP that you can obtain with the step above.
+For that you can use MySQL clients in host like workbench, navicat, [dbeaver](https://dbeaver.io/download/).
+
+## Nice to know
+During the MixMaster development server some different servers, databases e clients was created. For example, the ZoneServer in this example have a bug. When a Hero get level 114 or more, the hero can't obtain any GB when one mob death. Other versions of ZoneServer have this bug fixed. You can find other version os databases, server files and clients in the internet. If you want, you can find. If you want to up an online server, you can.
